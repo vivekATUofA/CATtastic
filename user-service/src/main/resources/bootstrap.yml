@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: user-service
+  cloud:
+    config:
+      uri: http://localhost:8888  # URL of the Config Server
+      fail-fast: true  # Ensure the app fails fast if config server is unavailable
+  profiles:
+    active: dev  # Load dev-specific properties
+
